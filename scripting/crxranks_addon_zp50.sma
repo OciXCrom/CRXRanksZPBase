@@ -12,12 +12,12 @@
 	#error "zp50_core.inc" is missing in your "scripting/include" folder. Download it from: "https://amxx-bg.info/inc/"
 #endif
 
-new const PLUGIN_VERSION[] = "1.0"
+new const PLUGIN_VERSION[] = "1.0 @ 5.0"
 
 public plugin_init()
 {
 	register_plugin("CRXRanks: ZP 5.0 Base", PLUGIN_VERSION, "OciXCrom")
-	register_cvar("CRXRanksZP50", PLUGIN_VERSION, FCVAR_SERVER|FCVAR_SPONLY|FCVAR_UNLOGGED)
+	register_cvar("CRXRanksZPBase", PLUGIN_VERSION, FCVAR_SERVER|FCVAR_SPONLY|FCVAR_UNLOGGED)
 }
 
 public zp_fw_core_cure_post(id, iAttacker)

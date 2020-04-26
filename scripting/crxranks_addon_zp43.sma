@@ -12,12 +12,12 @@
 	#error "zombieplague.inc" is missing in your "scripting/include" folder. Download it from: "https://amxx-bg.info/inc/"
 #endif
 
-new const PLUGIN_VERSION[] = "1.0"
+new const PLUGIN_VERSION[] = "1.0 @ 4.3"
 
 public plugin_init()
 {
 	register_plugin("CRXRanks: ZP 4.3 Base", PLUGIN_VERSION, "OciXCrom")
-	register_cvar("CRXRanksZP43", PLUGIN_VERSION, FCVAR_SERVER|FCVAR_SPONLY|FCVAR_UNLOGGED)
+	register_cvar("CRXRanksZPBase", PLUGIN_VERSION, FCVAR_SERVER|FCVAR_SPONLY|FCVAR_UNLOGGED)
 }
 
 public zp_user_humanized_post(id, iSurvivor)
